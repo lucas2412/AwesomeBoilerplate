@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
   <title>Awesome Boilerplate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -8,84 +8,59 @@
 </head>
 
 <body>
-	<header role="banner">
+	<header>
+	
+	<a href="home.html"> home</a> 
+	<a href="#addplayer"> add player</a>
+	<a href="players.html"> players</a>
+	 
+	
 		<div>
-			<h1><span>Awesome</span> Boilerplate</h1>
+			<h1><span>Internet</span> Explorers</h1>
 			<p>
 				<label> <a href="#content"> Jump To Content</a> </label> <br>
 				<label> <a href="#footer"> Jump To Footer </a> </label> <br>
 				<label> <a href="https://www.reddit.com/r/CatGifs">Jump To Kitties</a> </label>
 			</p>
 		</div>
+		
+		
+		
 	</header>
 	<main>
 	
-		<section id="content">
-			<article>
-			Name <input type="text"><br>
-			Vorname <input type="text"><br>
-			Email <input type="email"><br>
-			Telefonnummer <input type="tel"><br>
-			Geburtsdatum <input type="date"><br>
-			
-			Studiengang
-			<select name="Studiengang" size="1">
-			<option value="UIB">UIB</option>
-			<option value="IMB">IB</option>
-			<option value="IB">IMB</option>
-			
-			</select>
-	
-			
-
-			</article>
+		<section id="addplayer">
+			<form>
+				Vorname: <input type="text" name="vorname" required><br>
+				Nachname: <input type="text" name="name" required><br>
+				Verein: <input type="text" name="verein" required><br>
+				Headcoach: <input type="text" name="hcoach" required><br>
+				Assistant Coach: <input type="text" name="acoach" required><br>
+				Aktiv: <input type="checkbox" name="aktiv" ><br>
+				Position: 	<select name="position" size="1" required> 
+							<option value="center">Center</option >
+							<option value="guard">Guard</option>
+							<option value="power forward">Power Forwards</option>
+							<option value="wing" selected="selected"> Wing </option>
+							<option value="small forward">Small Forward</option> 
+							</select> <br>
+						
+				Geburtsjahr : <input type="number" name="jahr" required><br>
+				R&uumlckennummer: <input type="number" name="number" required><br>
+				Favorit markieren: <input type="checkbox" name="favorit" ><br>
+				<input type="submit">
+			</form>
 
 		</section>
 		<section>
-			<article>
-				<figure>
-					<div class="icon icon-learn"></div>
-				</figure>
-				<h3>Learn to Code</h3>
-				<p>
-					Mit der Vorlesung zu Webanwendungen lernst du nicht nur wie man geile
-					Webseiten erstellt, sondern auch wie Du effizienter Arbeiten kannst mit entsprechenden Tools.
-				</p>
-			</article>
-			<article>
-				<figure>
-					<div class="icon icon-power"></div>
-				</figure>
-				<h3>Get Superpowers</h3>
-				<p>
-					Mit den Meilensteinen wirst Du durch Aufgaben gef&uuml;hrt um so nach und nach eine
-					vollst&auml;ndige Webapplikation zu entwickeln.
-				</p>
-			</article>
-			<article>
-				<figure>
-					<div class="icon icon-help"></div>
-				</figure>
-				<h3>Help Others</h3>
-				<p>
-					Das wichtigste hierbei ist allerdings auch anderen zu helfen und sie zu unterst&uuml;tzen.
-			</article>
-			<article>
-				<figure>
-					<div class="icon icon-follow"></div>
-				</figure>
-				<h3>Follow Us</h3>
-				<p>
-					Falls du fragen hast, kannst du dich jederzeit an 
-					<a href="https://github.com/CodeKittey">@Codekittey</a>, wenden oder eine
-					Email schreiben: m.kraus@hs-mannheim.de
-				</p>
-			</article>
+		
+
+	
 		</section>
 	</main>
 	<footer id="footer">
 	
-		<img src="img/nodeschool.svg"></a>
+		<img src="img/bvb.png" width="300" height="300> </a>
 		
 	</footer>
 	<script src="design/index.js"></script>
